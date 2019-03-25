@@ -1,15 +1,20 @@
-//
-//  main.cpp
-//  hash
-//
-//  Created by Alex Filatov on 3/23/19.
-//  Copyright © 2019 Alex Filatov. All rights reserved.
-//
-
 #include <iostream>
+#include "List.hpp"
+#include "CPair.h"
+#include "CSecondList.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+int main()
+{
+    cout << "Hello World!" << endl;
+    CHashTable hTable;
+
+    hTable.Add("CAT", "Small night predator");
+    hTable.Add("LION", "Big african predator");
+    hTable.Add("TIGER", "Big asian forest predator");
+    hTable.Add("CAT", "My favorite animal");
+
     return 0;
 }
+
