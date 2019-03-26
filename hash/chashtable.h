@@ -12,6 +12,8 @@ class CHashTable
 public:
     CHashTable();
     void Add(string key, string value);
+    CList<CPair<string, string> > getByKey(string key);
+    void LoadFromFile(char *fileName);
 };
 
 #endif // CHASHTABLE_H
